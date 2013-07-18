@@ -2,6 +2,6 @@ INPUT in;
 OUTPUT out;
 
 out = GROUP in BY TIMEONLY SAMPLERATE 60
-      AGG BCC.sum("MIN", x) AS sumX,
-          BCC.count("ALL") AS countAll
-          BCC.avg("MIN",x) AS avgPerMinute;
+      AGG FC.sum("MIN", x) AS sumX,
+          FC.count("ALL") AS countAll
+          FC.avg("MIN",x) AS avgPerMinute;

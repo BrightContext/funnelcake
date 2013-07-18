@@ -3,29 +3,29 @@
 
 tweetVelocity = GROUP twitterInput2
     BY id SAMPLERATE 60
-    AGG BCC.count("MIN") AS tweetsPerMinute;
+    AGG FC.count("MIN") AS tweetsPerMinute;
 
 // Count the total number of tweets analyzed per session
 // start counting tweets when a user first loads the page
 
 cumulativeCount = GROUP twitterInput1
     BY id SAMPLERATE 5
-    AGG BCC.count("ALL") AS totalTweetsSeen;
+    AGG FC.count("ALL") AS totalTweetsSeen;
 
 
 // Perform complex real-time analysis on streaming data
 // listen to Twitter in real-time for users that fit your target demographic
 
 potentialBuyers = FILTER twitterInput3 WHERE
-    !BCC.isEmpty(placeName)
+    !FC.isEmpty(placeName)
     &&
-    BCC.contains(text, "house hunting");
+    FC.contains(text, "house hunting");
 
 // vet and qualify them in real-time
 
 topLeads = FILTER potentialBuyers WHERE
     userFollowerCount >= 15000 &&
-    BCC.contains(userProfile, "investor") &&
+    FC.contains(userProfile, "investor") &&
     userLocation == "Savannah, GA" &&
     userLang == "en";
 
@@ -42,8 +42,8 @@ OUTPUT customerComplaintsPerHour
 
 customerServiceAlerts = FILTER twitterInput4 WHERE
     userFollowerCount > 2000 &&
-    BCC.contains(text, "sucks") &&
-    BCC.contains(text, "yourProduct");
+    FC.contains(text, "sucks") &&
+    FC.contains(text, "yourProduct");
 
 contactTheseCustomers = TRANSFORM customerServiceAlerts WITH
     userScreenName AS customerName,
@@ -55,9 +55,9 @@ contactTheseCustomers = TRANSFORM customerServiceAlerts WITH
 
 brandChampions = FILTER twitterInput4 WHERE
     userFollowerCount >= 5000 &&
-    BCC.contains(text, "love") &&
-    BCC.contains(text, "yourProduct") &&
-    BCC.inList(urlMediaList, "http://www.yourbrand.com");
+    FC.contains(text, "love") &&
+    FC.contains(text, "yourProduct") &&
+    FC.inList(urlMediaList, "http://www.yourbrand.com");
 
 // Combine multiple data sources on the fly
 //ingest stock data and social media discussions to correlate stock performance with market buzz
@@ -67,13 +67,13 @@ INPUT twitterInput5;
 OUTPUT out;
 
 positiveMicrosoftMentions = FILTER twitterInput5 WHERE
-    BCC.inList(text, ["MSFT", "windows 8", "windows phone", "bill gates"]) &&
-    BCC.contains(text, "awesome");
+    FC.inList(text, ["MSFT", "windows 8", "windows phone", "bill gates"]) &&
+    FC.contains(text, "awesome");
 
 // perform mathematical calculations on streaming data
 
 averageMSFTgrowth = GROUP stocksDataStream BY stockUpdate
-    AGG BCC.avg("30SEC", stockPrice) AS avgGrowth;
+    AGG FC.avg("30SEC", stockPrice) AS avgGrowth;
 
 // weave together two or more streams on the fly and create the output fields you need
 microsoftSocialStocks = MERGE positiveMicrosoftMentions, averageMSFTgrowth
@@ -86,10 +86,10 @@ INPUT twitterInput6;
 OUTPUT trendingFashionMedia;
 
 relevantTweets = FILTER twitterInput6 WHERE
-    !BCC.isEmpty(mediaList) &&
-    !BCC.isEmpty(urls) &&
+    !FC.isEmpty(mediaList) &&
+    !FC.isEmpty(urls) &&
     retweetCount >= 50 &&
-    BCC.contains(text, "fashion");
+    FC.contains(text, "fashion");
 
 trendingFashionMedia = TRANSFORM relevantTweets WITH
     (relevantTweets.mediaList) AS trendingImages,

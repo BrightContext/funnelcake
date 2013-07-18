@@ -22,7 +22,7 @@ syn keyword funnelcakeStreamCommand FILTER GROUP SPLIT TRANSFORM MERGE
 syn keyword funnelcakeStreamCommandSecondary AGG SPLIT PARSE REMOVE WHERE
 syn keyword funnelcakeStreamKeyword BY AS WITH USING INTO UNIQUE USECASE
 
-syn keyword funnelcakeType INPUT OUTPUT BCC
+syn keyword funnelcakeType INPUT OUTPUT FC
 
 syn match funnelcakeNumber /\d\+/
 syn match funnelcakeComment /^\/\/.*/
