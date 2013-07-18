@@ -13,7 +13,7 @@ syn keyword funnelcakeFunc min max topX latest
 syn keyword funnelcakeFunc sum count avg
 syn keyword funnelcakeFunc sumActiveUser countActiveUser avgActiveUser
 syn keyword funnelcakeFunc numResponseActiveUser
-syn keyword funnelcakeFunc toLowerCase toUpperCase isEmpty inList
+syn keyword funnelcakeFunc toLowerCase toUpperCase isEmpty inList contains
 syn match funnelcakeFunc 'contains'
 
 syn keyword funnelcakeStatement TIMEONLY SAMPLERATE
