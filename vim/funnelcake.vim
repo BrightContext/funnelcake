@@ -13,13 +13,13 @@ syn keyword funnelcakeFunc min max topX latest
 syn keyword funnelcakeFunc sum count avg
 syn keyword funnelcakeFunc sumActiveUser countActiveUser avgActiveUser
 syn keyword funnelcakeFunc numResponseActiveUser
-syn keyword funnelcakeFunc toLowerCase toUpperCase isEmpty inList contains
+syn keyword funnelcakeFunc toLowerCase toUpperCase isEmpty inList
 syn match funnelcakeFunc 'contains'
 
 syn keyword funnelcakeStatement TIMEONLY SAMPLERATE
 
 syn keyword funnelcakeStreamCommand FILTER GROUP SPLIT TRANSFORM MERGE
-syn keyword funnelcakeStreamCommandSecondary AGG SPLIT PARSE REMOVE WHERE
+syn keyword funnelcakeStreamCommandSecondary AGG PARSE REMOVE WHERE
 syn keyword funnelcakeStreamKeyword BY AS WITH USING INTO UNIQUE USECASE
 
 syn keyword funnelcakeType INPUT OUTPUT FC
@@ -31,7 +31,6 @@ syn match funnelcakeSpecial /[\[\]\(\)=]/
 syn match funnelcakeComparitor /[\<\>]/
 syn match funnelcakeComparitor /==/
 syn match funnelcakeComparitor />=/
-syn match funnelcakeComparitor /=</
 syn match funnelcakeComparitor /=</
 syn match funnelcakeComparitor /!=/
 syn match funnelcakeOperator /&&/
