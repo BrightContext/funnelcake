@@ -72,7 +72,9 @@ positiveMicrosoftMentions = FILTER twitterInput5 WHERE
 
 // perform mathematical calculations on streaming data
 
-averageMSFTgrowth = GROUP stocksDataStream BY stockUpdate
+averageMSFTgrowth = GROUP stocksDataStream
+    BY stockUpdate
+    SAMPLERATE 5
     AGG FC.avg("30SEC", stockPrice) AS avgGrowth;
 
 // weave together two or more streams on the fly and create the output fields you need
