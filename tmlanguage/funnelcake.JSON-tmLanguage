@@ -1,4 +1,4 @@
-{ "name": "Syntax Name",
+{ "name": "FunnelCake",
   "scopeName": "source.funnelcake",
   "fileTypes": ["cake", "funnelcake"],
   "patterns": [
