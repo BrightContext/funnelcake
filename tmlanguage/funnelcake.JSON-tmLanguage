@@ -6,6 +6,13 @@
       "name": "constant.numeric.funnelcake"
     },
 
+    { "match": "\\btrue\\b",
+      "name": "constant.language.funnelcake"
+    },
+    { "match": "\\bfalse\\b",
+      "name": "constant.language.funnelcake"
+    },
+
     { "match": "^\/\/.*",
       "name": "comment.line.funnelcake"
     },

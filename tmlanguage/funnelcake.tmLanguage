@@ -19,6 +19,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\btrue\b</string>
+			<key>name</key>
+			<string>constant.language.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bfalse\b</string>
+			<key>name</key>
+			<string>constant.language.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>^//.*</string>
 			<key>name</key>
 			<string>comment.line.funnelcake</string>
