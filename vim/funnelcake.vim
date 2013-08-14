@@ -24,6 +24,8 @@ syn keyword funnelcakeStreamKeyword BY AS WITH USING INTO UNIQUE USECASE
 
 syn keyword funnelcakeType INPUT OUTPUT FC
 
+syn match funnelcakeConstant /true/
+syn match funnelcakeConstant /false/
 syn match funnelcakeNumber /\d\+/
 syn match funnelcakeComment /^\/\/.*/
 syn match funnelcakeDelimiter /[\.\,;]/
