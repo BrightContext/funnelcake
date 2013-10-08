@@ -122,14 +122,11 @@
     },
 
     {  "name": "keyword.funnelcake",
-       "match": "\\bTIMEONL\\b"
-    },
-    {  "name": "keyword.funnelcake",
-       "match": "\\bSAMPLERATE\\b"
+       "match": "\\bTIMEONLY\\b"
     },
 
     {  "name": "keyword.control.funnelcake",
-       "match": "\\bSAMPLERATE\\b"
+       "match": "\\REFRESHRATE\\b"
     },
     {  "name": "keyword.control.funnelcake",
        "match": "\\bFILTER\\b"
@@ -151,6 +148,9 @@
        "match": "\\bAGG\\b"
     },
     {  "name": "keyword.funnelcake",
+       "match": "\\bLEADERBOARD\\b"
+    },
+    {  "name": "keyword.funnelcake",
        "match": "\\bPARSE\\b"
     },
     {  "name": "keyword.funnelcake",
@@ -162,6 +162,9 @@
 
     {  "name": "keyword.funnelcake",
        "match": "\\bBY\\b"
+    },
+    {  "name": "keyword.funnelcake",
+       "match": "\\bTOP\\b"
     },
     {  "name": "keyword.funnelcake",
        "match": "\\bAS\\b"

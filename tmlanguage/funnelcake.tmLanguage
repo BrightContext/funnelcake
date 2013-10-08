@@ -229,19 +229,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bTIMEONL\b</string>
+			<string>\bTIMEONLY\b</string>
 			<key>name</key>
 			<string>keyword.funnelcake</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bSAMPLERATE\b</string>
-			<key>name</key>
-			<string>keyword.funnelcake</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\bSAMPLERATE\b</string>
+			<string>\REFRESHRATE\b</string>
 			<key>name</key>
 			<string>keyword.control.funnelcake</string>
 		</dict>
@@ -283,6 +277,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\bLEADERBOARD\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\bPARSE\b</string>
 			<key>name</key>
 			<string>keyword.funnelcake</string>
@@ -302,6 +302,12 @@
 		<dict>
 			<key>match</key>
 			<string>\bBY\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bTOP\b</string>
 			<key>name</key>
 			<string>keyword.funnelcake</string>
 		</dict>
