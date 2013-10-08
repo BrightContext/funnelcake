@@ -2,14 +2,16 @@
 // count the number of tweets flowing through the system
 
 tweetVelocity = GROUP twitterInput2
-    BY id SAMPLERATE 60
+    BY id
+    REFRESHRATE 60
     AGG FC.count("MIN") AS tweetsPerMinute;
 
 // Count the total number of tweets analyzed per session
 // start counting tweets when a user first loads the page
 
 cumulativeCount = GROUP twitterInput1
-    BY id SAMPLERATE 5
+    BY id
+    REFRESHRATE 5
     AGG FC.count("ALL") AS totalTweetsSeen;
 
 
@@ -74,7 +76,7 @@ positiveMicrosoftMentions = FILTER twitterInput5 WHERE
 
 averageMSFTgrowth = GROUP stocksDataStream
     BY stockUpdate
-    SAMPLERATE 5
+    REFRESHRATE 5
     AGG FC.avg("30SEC", stockPrice) AS avgGrowth;
 
 // weave together two or more streams on the fly and create the output fields you need

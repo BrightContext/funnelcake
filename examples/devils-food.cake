@@ -24,7 +24,7 @@ strm4 = MERGE strm1, strm3
 
 detOut = FILTER strm4 WHERE hasMedia;
 
-aggOut = GROUP strm4 BY a, b SAMPLERATE 5
+aggOut = GROUP strm4 BY a, b REFRESHRATE 5
          AGG FC.count("MIN")               AS numPoints,
              FC.avg("MIN", temperature)    AS avgTemp,
              FC.latest(text)               AS lastMsg;
