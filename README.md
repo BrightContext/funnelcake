@@ -1,7 +1,7 @@
 # FunnelCake
 
+http://www.brightcontext.com/developers/funnelcake/
 
-http://www.brightcontext.com/funnelcake
 
 		                        #,
 		                        ###
