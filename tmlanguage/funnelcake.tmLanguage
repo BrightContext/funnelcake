@@ -361,6 +361,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\bIGNORECASE\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\bINPUT\b</string>
 			<key>name</key>
 			<string>support.type.funnelcake</string>

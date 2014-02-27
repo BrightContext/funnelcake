@@ -190,6 +190,9 @@
     {  "name": "keyword.funnelcake",
        "match": "\\bUSECASE\\b"
     },
+    {  "name": "keyword.funnelcake",
+       "match": "\\bIGNORECASE\\b"
+    },
 
     {  "name": "support.type.funnelcake",
        "match": "\\bINPUT\\b"
