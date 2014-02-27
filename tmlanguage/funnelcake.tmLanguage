@@ -319,6 +319,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\bIN\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bCONTAINS\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\bWITH\b</string>
 			<key>name</key>
 			<string>keyword.funnelcake</string>

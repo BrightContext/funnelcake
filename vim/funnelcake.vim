@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: BrightContext Funnel Cake
 " Maintainer: Steven Fusco <sfusco@brightcontext.com>
-" Latest Revision: 12 July 2013
+" Latest Revision: 27 Feburary 2014
 
 if exists("b:current_syntax")
   finish
@@ -20,7 +20,7 @@ syn keyword funnelcakeStatement TIMEONLY REFRESHRATE
 
 syn keyword funnelcakeStreamCommand FILTER GROUP SPLIT TRANSFORM MERGE
 syn keyword funnelcakeStreamCommandSecondary AGG PARSE REMOVE WHERE LEADERBOARD TOP
-syn keyword funnelcakeStreamKeyword BY AS WITH USING INTO UNIQUE USECASE
+syn keyword funnelcakeStreamKeyword BY AS WITH USING INTO UNIQUE USECASE IN CONTAINS
 
 syn keyword funnelcakeType INPUT OUTPUT FC
 

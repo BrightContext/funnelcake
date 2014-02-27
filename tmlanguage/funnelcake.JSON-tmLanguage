@@ -170,6 +170,12 @@
        "match": "\\bAS\\b"
     },
     {  "name": "keyword.funnelcake",
+       "match": "\\bIN\\b"
+    },
+    {  "name": "keyword.funnelcake",
+       "match": "\\bCONTAINS\\b"
+    },
+    {  "name": "keyword.funnelcake",
        "match": "\\bWITH\\b"
     },
     {  "name": "keyword.funnelcake",
