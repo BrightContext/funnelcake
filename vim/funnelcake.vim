@@ -18,7 +18,7 @@ syn match funnelcakeFunc 'contains'
 
 syn keyword funnelcakeStatement TIMEONLY REFRESHRATE
 
-syn keyword funnelcakeStreamCommand FILTER GROUP SPLIT TRANSFORM MERGE
+syn keyword funnelcakeStreamCommand FILTER GROUP SPLIT TRANSFORM MERGE TAG
 syn keyword funnelcakeStreamCommandSecondary AGG PARSE REMOVE WHERE LEADERBOARD TOP
 syn keyword funnelcakeStreamKeyword BY AS WITH USING INTO UNIQUE USECASE IN IGNORECASE
 syn match funnelcakeStreamKeyword 'CONTAINS'

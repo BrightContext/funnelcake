@@ -253,6 +253,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\bTAG\b</string>
+			<key>name</key>
+			<string>keyword.control.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\bSPLIT\b</string>
 			<key>name</key>
 			<string>keyword.control.funnelcake</string>
