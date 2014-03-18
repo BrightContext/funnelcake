@@ -1,0 +1,38 @@
+// vim: ts=20
+
+id	Integer	8 byte integer id of the tweet
+ts	Date	Timestamp for the tweet
+coord	Map	A coordinates object -- includes long, lat, type
+mediaList	List	A list of URLs pointing to photos attached the tweet
+urlList	List	A list of the URLs as they show in the tweet (shortened typically)
+urlExpandedList	List	A list of fully expanded URLs from the tweet
+mentionList	List	A list of the users mentioned in the tweet
+hashTagList	List	A list of the hashtags included in the tweet
+repliedScreenName	String	If this tweet is replying to another tweet -- this is the screen name of the user it is replying to
+repliedUserId	Integer	64bit integer ID of the user
+repliedTweetId	Integer	64bit integer ID of the tweet that this tweet is replying to
+placeID	String	ID indicating the place
+placeBox	Map	A coordinates object -- includes long, lat, type
+placeCountry	String	Country (full name) of the place
+placeName	String	Short name of the place
+placeFullName	String	Long name of the place
+placeType	String	Type of place -- like city
+placeUrl	String	URL associated with the place
+retweetCount	Integer	# of times this tweet has been retweeted
+source	String	URL indicating the utility used to send the tweet
+text	String	The actual text of the tweet
+userId	Integer	64bit integer ID for the user
+userScreenName	String	@name for the user
+userName	String	The full name for the user
+userDesc	String	The description for the user
+userImgUrl	String	The thumbnail of the user that sent the tweet
+userCreated	Integer	Timestamp at which the user was created
+userFavCount	Integer	# of favorites the user has at the time of the tweet
+userFollowCount	Integer	# of followers this user has at the time of the tweet
+userFriendCount	Integer	# of people this user is following
+userLang	String	Language of the user and tweet
+userLoc	String	Location the user put in their account
+userListsCount	Integer	# of public lists this user is a member of at the time of the tweet
+userNumTweets	Integer	# of tweets the user has sent out
+userTZ	String	Timezone the user claims to be in
+userUrl	String	URL the user put into their profile
