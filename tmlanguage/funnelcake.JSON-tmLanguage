@@ -198,6 +198,18 @@
             "name": "keyword.funnelcake"
         }, 
         {
+            "match": "\\bLEADERBOARD\\b",
+            "name": "keyword.funnelcake"
+        },
+        {
+            "match":"\\bFIELD\\b",
+            "name": "keyword.funnelcake"
+        }, 
+        {
+            "match":"\\bFIELDLIST\\b",
+            "name": "keyword.funnelcake"
+        },
+        {
             "match": "\\bBY\\b", 
             "name": "keyword.funnelcake"
         }, 
