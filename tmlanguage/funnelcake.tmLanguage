@@ -289,6 +289,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\bFIELD\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bFIELDLIST\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\bPARSE\b</string>
 			<key>name</key>
 			<string>keyword.funnelcake</string>

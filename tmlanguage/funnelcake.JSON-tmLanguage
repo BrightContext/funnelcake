@@ -1,5 +1,4 @@
 {
-    "scopeName": "source.funnelcake", 
     "patterns": [
         {
             "match": "\\b\\d+\\b", 
@@ -186,6 +185,14 @@
             "name": "keyword.funnelcake"
         }, 
         {
+            "match": "\\bFIELD\\b", 
+            "name": "keyword.funnelcake"
+        }, 
+        {
+            "match": "\\bFIELDLIST\\b", 
+            "name": "keyword.funnelcake"
+        }, 
+        {
             "match": "\\bPARSE\\b", 
             "name": "keyword.funnelcake"
         }, 
@@ -197,18 +204,6 @@
             "match": "\\bWHERE\\b", 
             "name": "keyword.funnelcake"
         }, 
-        {
-            "match": "\\bLEADERBOARD\\b",
-            "name": "keyword.funnelcake"
-        },
-        {
-            "match":"\\bFIELD\\b",
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match":"\\bFIELDLIST\\b",
-            "name": "keyword.funnelcake"
-        },
         {
             "match": "\\bBY\\b", 
             "name": "keyword.funnelcake"
@@ -266,10 +261,11 @@
             "name": "support.type.funnelcake"
         }
     ], 
-    "name": "FunnelCake", 
     "fileTypes": [
         "cake", 
         "funnelcake"
     ], 
+    "scopeName": "source.funnelcake", 
+    "name": "FunnelCake", 
     "uuid": "386489ff-0c0b-4a98-8dbb-cb18766cf961"
 }
