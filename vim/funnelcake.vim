@@ -16,7 +16,7 @@ syn keyword funnelcakeFunc numResponseActiveUser
 syn keyword funnelcakeFunc toLowerCase toUpperCase isEmpty inList
 syn match funnelcakeFunc 'contains'
 
-syn keyword funnelcakeStatement TIMEONLY REFRESHRATE
+syn keyword funnelcakeStatement TIMEONLY REFRESHRATE DEFAULT VALUES
 
 syn keyword funnelcakeStreamCommand FILTER GROUP SPLIT TRANSFORM MERGE TAG
 syn keyword funnelcakeStreamCommandSecondary AGG PARSE REMOVE WHERE FIELD FIELDLIST LEADERBOARD TOP

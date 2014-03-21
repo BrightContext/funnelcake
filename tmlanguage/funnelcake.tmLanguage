@@ -319,6 +319,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\bDEFAULT\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\bBY\b</string>
 			<key>name</key>
 			<string>keyword.funnelcake</string>
@@ -350,6 +356,12 @@
 		<dict>
 			<key>match</key>
 			<string>\bWITH\b</string>
+			<key>name</key>
+			<string>keyword.funnelcake</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bVALUES\b</string>
 			<key>name</key>
 			<string>keyword.funnelcake</string>
 		</dict>

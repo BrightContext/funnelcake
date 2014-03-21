@@ -1,271 +1,279 @@
 {
-    "patterns": [
-        {
-            "match": "\\b\\d+\\b", 
-            "name": "constant.numeric.funnelcake"
-        }, 
-        {
-            "match": "\\btrue\\b", 
-            "name": "constant.language.funnelcake"
-        }, 
-        {
-            "match": "\\bfalse\\b", 
-            "name": "constant.language.funnelcake"
-        }, 
-        {
-            "match": "^//.*", 
-            "name": "comment.line.funnelcake"
-        }, 
-        {
-            "match": "\".*?\"", 
-            "name": "string.quoted.funnelcake"
-        }, 
-        {
-            "match": "==", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": ">=", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": "=<", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": "!=", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": "&&", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": "\\!", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": "\\+", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": "-", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": "<", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": ">", 
-            "name": "keyword.operator.funnelcake"
-        }, 
-        {
-            "match": "=", 
-            "name": "constant.language.funnelcake"
-        }, 
-        {
-            "match": ";", 
-            "name": "constant.language.funnelcake"
-        }, 
-        {
-            "match": "\\bmin\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bmax\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\btopX\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\blatest\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bsum\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bcount\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bavg\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bsumActiveUser\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bcountActiveUser\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bavgActiveUser\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bnumResponseActiveUser\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\btoLowerCase\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\btoUpperCase\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bisEmpty\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\binList\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bcontains\\b", 
-            "name": "support.function.funnelcake"
-        }, 
-        {
-            "match": "\\bMIN\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bMAX\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bALL\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bTIMEONLY\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\REFRESHRATE\\b", 
-            "name": "keyword.control.funnelcake"
-        }, 
-        {
-            "match": "\\bFILTER\\b", 
-            "name": "keyword.control.funnelcake"
-        }, 
-        {
-            "match": "\\bGROUP\\b", 
-            "name": "keyword.control.funnelcake"
-        }, 
-        {
-            "match": "\\bTAG\\b", 
-            "name": "keyword.control.funnelcake"
-        }, 
-        {
-            "match": "\\bSPLIT\\b", 
-            "name": "keyword.control.funnelcake"
-        }, 
-        {
-            "match": "\\bTRANSFORM\\b", 
-            "name": "keyword.control.funnelcake"
-        }, 
-        {
-            "match": "\\bMERGE\\b", 
-            "name": "keyword.control.funnelcake"
-        }, 
-        {
-            "match": "\\bAGG\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bLEADERBOARD\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bFIELD\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bFIELDLIST\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bPARSE\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bREMOVE\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bWHERE\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bBY\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bTOP\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bAS\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bIN\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bCONTAINS\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bWITH\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bUSING\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bINTO\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bUNIQUE\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bUSECASE\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bIGNORECASE\\b", 
-            "name": "keyword.funnelcake"
-        }, 
-        {
-            "match": "\\bINPUT\\b", 
-            "name": "support.type.funnelcake"
-        }, 
-        {
-            "match": "\\bOUTPUT\\b", 
-            "name": "support.type.funnelcake"
-        }, 
-        {
-            "match": "\\bFC\\b", 
-            "name": "support.type.funnelcake"
-        }
-    ], 
+    "uuid": "386489ff-0c0b-4a98-8dbb-cb18766cf961", 
+    "name": "FunnelCake", 
     "fileTypes": [
         "cake", 
         "funnelcake"
     ], 
-    "scopeName": "source.funnelcake", 
-    "name": "FunnelCake", 
-    "uuid": "386489ff-0c0b-4a98-8dbb-cb18766cf961"
+    "patterns": [
+        {
+            "name": "constant.numeric.funnelcake", 
+            "match": "\\b\\d+\\b"
+        }, 
+        {
+            "name": "constant.language.funnelcake", 
+            "match": "\\btrue\\b"
+        }, 
+        {
+            "name": "constant.language.funnelcake", 
+            "match": "\\bfalse\\b"
+        }, 
+        {
+            "name": "comment.line.funnelcake", 
+            "match": "^//.*"
+        }, 
+        {
+            "name": "string.quoted.funnelcake", 
+            "match": "\".*?\""
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": "=="
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": ">="
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": "=<"
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": "!="
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": "&&"
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": "\\!"
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": "\\+"
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": "-"
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": "<"
+        }, 
+        {
+            "name": "keyword.operator.funnelcake", 
+            "match": ">"
+        }, 
+        {
+            "name": "constant.language.funnelcake", 
+            "match": "="
+        }, 
+        {
+            "name": "constant.language.funnelcake", 
+            "match": ";"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bmin\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bmax\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\btopX\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\blatest\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bsum\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bcount\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bavg\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bsumActiveUser\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bcountActiveUser\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bavgActiveUser\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bnumResponseActiveUser\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\btoLowerCase\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\btoUpperCase\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bisEmpty\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\binList\\b"
+        }, 
+        {
+            "name": "support.function.funnelcake", 
+            "match": "\\bcontains\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bMIN\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bMAX\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bALL\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bTIMEONLY\\b"
+        }, 
+        {
+            "name": "keyword.control.funnelcake", 
+            "match": "\\REFRESHRATE\\b"
+        }, 
+        {
+            "name": "keyword.control.funnelcake", 
+            "match": "\\bFILTER\\b"
+        }, 
+        {
+            "name": "keyword.control.funnelcake", 
+            "match": "\\bGROUP\\b"
+        }, 
+        {
+            "name": "keyword.control.funnelcake", 
+            "match": "\\bTAG\\b"
+        }, 
+        {
+            "name": "keyword.control.funnelcake", 
+            "match": "\\bSPLIT\\b"
+        }, 
+        {
+            "name": "keyword.control.funnelcake", 
+            "match": "\\bTRANSFORM\\b"
+        }, 
+        {
+            "name": "keyword.control.funnelcake", 
+            "match": "\\bMERGE\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bAGG\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bLEADERBOARD\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bFIELD\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bFIELDLIST\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bPARSE\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bREMOVE\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bWHERE\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bDEFAULT\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bBY\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bTOP\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bAS\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bIN\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bCONTAINS\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bWITH\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bVALUES\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bUSING\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bINTO\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bUNIQUE\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bUSECASE\\b"
+        }, 
+        {
+            "name": "keyword.funnelcake", 
+            "match": "\\bIGNORECASE\\b"
+        }, 
+        {
+            "name": "support.type.funnelcake", 
+            "match": "\\bINPUT\\b"
+        }, 
+        {
+            "name": "support.type.funnelcake", 
+            "match": "\\bOUTPUT\\b"
+        }, 
+        {
+            "name": "support.type.funnelcake", 
+            "match": "\\bFC\\b"
+        }
+    ], 
+    "scopeName": "source.funnelcake"
 }
